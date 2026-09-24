@@ -3,6 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Hello</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, sans-serif;
+      /* InDesign-style colour ramp: hues left to right, white at the top, black at the bottom */
+      background:
+        linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0) 50%, #000 100%),
+        linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    }
+    h1 {
+      color: #fff;
+      font-size: clamp(2rem, 6vw, 4rem);
+      text-shadow: 0 2px 12px rgba(0,0,0,.5);
+    }
+  </style>
 </head>
 <body>
   <h1>Hello, I'm Lucy Birley</h1>
